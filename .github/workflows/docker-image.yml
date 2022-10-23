@@ -22,10 +22,14 @@ jobs:
         with:
           username: nayeem0987
           password: dckr_pat_QBIbafqls-F5Jl5RFsYajmZHJqU 
+          
+      - uses: actions/checkout@v3
+      - name: Build the Docker image
+        run: docker build . --file Dockerfile --tag nayeem0987/new-nginx:$(date +%s)
         
       - 
-        name: Build and push
+        name: Build push
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: nayeem0987/nginx-new:$(date +%s)
+
