@@ -25,7 +25,7 @@ jobs:
           
       - uses: actions/checkout@v3
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag nayeem0987/new-nginx:$(date +%s)
+        run: docker build . --file Dockerfile --tag nayeem0987/new-nginx:latest
         
       - 
         name: Build push
