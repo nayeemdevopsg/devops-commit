@@ -32,4 +32,5 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
+          tag: nayeem0987/new-nginx:$(date +%s)
 
