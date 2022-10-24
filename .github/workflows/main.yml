@@ -16,7 +16,7 @@ jobs:
         with:
           registry: ghcr.io
           username: nayeemdevopsg
-          password: dckr_pat_QBIbafqls-F5Jl5RFsYajmZHJqU
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push the Docker image
         uses: docker/build-push-action@v3
