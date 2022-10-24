@@ -14,7 +14,7 @@ jobs:
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v2
         with:
-          registry: ghcr.io
+          registry: ghcr.io/containers
           username: nayeemdevopsg
           password: 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
 
