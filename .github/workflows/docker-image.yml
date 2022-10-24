@@ -32,5 +32,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: nayeem0987/new-nginx:latest
+          tags: | 
+            nayeem0987/new-nginx:latest
+            nayeem0987/new-nginx:${{ github.sha }}
 
