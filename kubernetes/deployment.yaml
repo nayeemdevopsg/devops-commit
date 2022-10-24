@@ -17,5 +17,6 @@ spec:
      containers:
       - name: nginx
         image: nayeem0987/new-nginx:latest
+        imagePullPolicy: Always
     imagePullSecrets:
       - name: github-container-registry
